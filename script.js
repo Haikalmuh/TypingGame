@@ -8,7 +8,17 @@ const sentences = [
   "Can you beat your high score?",
   "Every keystroke counts now.",
   "Focus, type, and don't give up!",
-  "Code like a ninja!"
+  "Code like a ninja!",
+  "Practice makes perfect, every day.",
+  "Failure is just a step to success.",
+  "Debugging is like being a detective.",
+  "Creativity fuels great developers.",
+  "Stay curious, keep learning!",
+  "Typing fast is a useful superpower.",
+  "Write code, break stuff, repeat.",
+  "You got this, don't stop now!",
+  "Patience is part of progress.",
+  "Hustle in silence, type in speed."
 ];
 
 let sentence = "";
@@ -40,6 +50,11 @@ function showSentence() {
     .split("")
     .map(char => `<span>${char}</span>`)
     .join("");
+
+  // Tambah efek animasi saat tampil
+  displayText.classList.remove("fade-in");
+  void displayText.offsetWidth; // Trigger reflow untuk animasi bisa diulang
+  displayText.classList.add("fade-in");
 }
 
 function updateStats() {

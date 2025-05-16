@@ -101,9 +101,52 @@ button:active {
 
 .correct {
     color: #00ff00;
-  }
-  
-  .incorrect {
+}
+
+.incorrect {
     color: #ff4d4d;
-  }
-  
+}
+
+/* Untuk efek fade saat kalimat baru muncul */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek shake/getar untuk input salah */
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
