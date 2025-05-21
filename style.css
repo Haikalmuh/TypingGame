@@ -13,6 +13,42 @@ body {
     overflow: hidden;
 }
 
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #020307, #1a1a40);
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+.landing-container {
+    text-align: center;
+    border: 2px solid cyan;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #0d0d1a;
+    box-shadow: 0 0 15px cyan;
+}
+
+.landing-container button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.landing-container button:hover {
+    background-color: #ff3385;
+}
+
+
 .container {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px;
